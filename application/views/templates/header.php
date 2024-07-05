@@ -13,8 +13,7 @@
     <!-- my CSS -->
     <link rel="stylesheet" href="<?= base_url(); ?>assets/css/style.css">
 
-    <title>TesJudul</title>
-    <!-- <?php echo $judul; ?> -->
+    <title><?php echo $judul; ?></title>
 </head>
 
 <body>
