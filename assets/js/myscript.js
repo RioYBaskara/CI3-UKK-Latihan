@@ -29,6 +29,15 @@ if (flashData == "Diubah") {
 	});
 }
 
+if (flashData == "Dihapus") {
+	Swal.fire({
+		title: "Data " + flashData,
+		text: "Data telah berhasil " + flashData,
+		type: "success",
+		icon: "success",
+	});
+}
+
 $(".tombol-hapus").on("click", function (e) {
 	e.preventDefault();
 	const href = $(this).attr("href");
