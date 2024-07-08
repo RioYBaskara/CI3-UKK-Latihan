@@ -25,29 +25,28 @@ class Barang extends CI_Controller
     public function tambah()
     {
         $data["judul"] = "Form Tambah Data Barang";
+        $data["kategori"] = $this->Kategori_model->getAllKategori();
 
         // Rules untuk form_validation
         $this->form_validation->set_rules("merk", "Merk", "required");
         $this->form_validation->set_rules("seri", "Seri", "required");
         $this->form_validation->set_rules("spesifikasi", "Spesifikasi", "required");
-        $this->form_validation->set_rules("stok", "Stok", "required|numeric");
         $this->form_validation->set_rules("kategori_id", "ID Kategori", "required");
+        $this->form_validation->set_rules("stok", "Stok", "required|numeric");
 
-        // CREATE || Pengkondisian form_validation, jika input salah, kembali ke view form input. jika input benar, menjalankan query untuk menambahkan data ke tabel mahasiswa lalu redirect dengan session, flashdata
         if ($this->form_validation->run() == FALSE) {
             $this->load->view("templates/header.php", $data);
             $this->load->view("templates/templateatas.php");
-            $this->load->view("barang/tambah.php");
+            $this->load->view("barang/tambah.php", $data);
             $this->load->view("templates/templatebawah.php");
             $this->load->view("templates/footer.php");
         } else {
             $this->Barang_model->insertBarang();
-            // flashdata, session flash dengan isi Ditambahkan
             $this->session->set_flashdata("flashbarang", "Ditambahkan");
-            // mengalihkan ke view mahasiswa
             redirect('barang');
         }
     }
+
 
     public function hapus($id)
     {

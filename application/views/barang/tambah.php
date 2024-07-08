@@ -23,8 +23,15 @@
                             <small class="form-text text-danger"><?= form_error('spesifikasi'); ?></small>
                         </div>
                         <div class="form-group">
-                            <label for="kategori_id">ID Kategori</label>
-                            <input type="text" name="kategori_id" class="form-control" id="kategori_id">
+                            <label for="kategori_id">Kategori</label>
+                            <select name="kategori_id" class="form-control" id="kategori_id">
+                                <option value="">Pilih Kategori</option>
+                                <?php foreach ($kategori as $kat): ?>
+                                    <option value="<?= $kat['id']; ?>">
+                                        <?= $kat['id']; ?> - <?= $kat['deskripsi']; ?>
+                                    </option>
+                                <?php endforeach; ?>
+                            </select>
                             <small class="form-text text-danger"><?= form_error('kategori_id'); ?></small>
                         </div>
                         <div class="form-group">
