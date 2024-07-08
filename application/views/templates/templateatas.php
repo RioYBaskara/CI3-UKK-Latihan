@@ -43,8 +43,8 @@
                 <div id="collapseData" class="collapse" aria-labelledby="headingData" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Data Options:</h6>
-                        <a class="nav-item nav-link" href="<?= base_url(); ?>kategori">Kategori</a>
-                        <a class="nav-item nav-link" href="<?= base_url(); ?>barang">Barang</a>
+                        <a class="nav-item nav-link text-dark" href="<?= base_url(); ?>kategori">Kategori</a>
+                        <a class="nav-item nav-link text-dark" href="<?= base_url(); ?>barang">Barang</a>
                     </div>
                 </div>
             </li>
@@ -60,8 +60,8 @@
                     data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Transaksi Options:</h6>
-                        <a class="nav-item nav-link" href="<?= base_url(); ?>barangmasuk">BarangMasuk</a>
-                        <a class="nav-item nav-link" href="<?= base_url(); ?>barangkeluar">BarangKeluar</a>
+                        <a class="nav-item nav-link text-dark" href="<?= base_url(); ?>barangmasuk">BarangMasuk</a>
+                        <a class="nav-item nav-link text-dark" href="<?= base_url(); ?>barangkeluar">BarangKeluar</a>
                     </div>
                 </div>
             </li>
@@ -169,7 +169,7 @@
 
                     <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                        <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>
+                        <h1 class="h3 mb-0 text-gray-800">Inventaris</h1>
                         <a href="/" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
                                 class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>
                     </div>

@@ -51,4 +51,39 @@ class Kategori extends CI_Controller
         $this->session->set_flashdata("flash", "Dihapus");
         redirect('kategori');
     }
+
+    public function detail($id)
+    {
+        $data['judul'] = 'Halaman Detail Kategori';
+        $data['kategori'] = $this->Kategori_model->getKategoriById($id);
+
+        $this->load->view("templates/header.php", $data);
+        $this->load->view("templates/templateatas.php");
+        $this->load->view("kategori/detail.php");
+        $this->load->view("templates/templatebawah.php");
+        $this->load->view("templates/footer.php");
+    }
+
+    public function ubah($id)
+    {
+        $data['judul'] = 'Halaman Ubah Data Kategori';
+        $data['kategori'] = $this->Kategori_model->getKategoriById($id);
+
+        $this->form_validation->set_rules("deskripsi", "Deksripsi", "required");
+        $this->form_validation->set_rules("kategori", "Kategori", "required");
+
+        if ($this->form_validation->run() == FALSE) {
+            $this->load->view("templates/header.php", $data);
+            $this->load->view("templates/templateatas.php");
+            $this->load->view("kategori/ubah.php", $data);
+            $this->load->view("templates/templatebawah.php");
+            $this->load->view("templates/footer.php");
+        } else {
+            $this->Kategori_model->ubahDataKategori();
+            // flashdata, session flash dengan isi Ditambahkan
+            $this->session->set_flashdata("flash", "Diubah");
+            // mengalihkan ke view mahasiswa
+            redirect('kategori');
+        }
+    }
 }

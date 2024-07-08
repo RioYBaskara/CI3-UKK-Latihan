@@ -4,15 +4,26 @@
 // 	type: "success",
 // 	icon: "success",
 // });
+var baseUrl = "http://localhost/ci3ukk/";
+
 const flashData = $(".flash-data").data("flashdata");
 
-console.log(flashData);
+// console.log(flashData);
 // Swal.fire("Tes", "Tes " + flashData, "success");
 
 if (flashData == "Ditambahkan") {
 	Swal.fire({
 		title: "Data " + flashData,
-		text: "Data telah Berhasil " + flashData,
+		text: "Data telah berhasil " + flashData,
+		type: "success",
+		icon: "success",
+	});
+}
+
+if (flashData == "Diubah") {
+	Swal.fire({
+		title: "Data " + flashData,
+		text: "Data telah berhasil " + flashData,
 		type: "success",
 		icon: "success",
 	});

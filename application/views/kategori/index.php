@@ -37,12 +37,12 @@
                             <td><?= $ktg['deskripsi']; ?></td>
                             <td><?= $ktg['kategori']; ?></td>
                             <td>
-                                <a href="<?= base_url(); ?>kategori/detail/<?= $ktg['id']; ?>"
-                                    class="badge badge-primary ">Detail</a>
-                                <a href="<?= base_url(); ?>kategori/ubah/<?= $ktg['id']; ?>"
-                                    class="badge badge-success  ">Ubah</a>
+                                <a href="<?= base_url(); ?>kategori/detail/<?= $ktg['id']; ?>" class="btn btn-primary "><i
+                                        class="fa fa-eye"></i></a>
+                                <a href="<?= base_url(); ?>kategori/ubah/<?= $ktg['id']; ?>" class="btn btn-success  "><i
+                                        class="fa fa-pencil-alt"></i></a>
                                 <a href="<?= base_url(); ?>kategori/hapus/<?= $ktg['id']; ?>"
-                                    class="badge badge-danger tombol-hapus">Hapus</a>
+                                    class="btn btn-danger tombol-hapus"><i class="fa fa-trash"></i></a>
                             </td>
                         </tr>
                     <?php endforeach; ?>
