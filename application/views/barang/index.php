@@ -1,4 +1,4 @@
-<!-- <?php var_dump($barang); ?> -->
+<?php var_dump($barang); ?>
 <div class="container">
     <div class="flash-data-barang" data-flashdata="<?= $this->session->flashdata('flashbarang') ?>"></div>
     <h3 class="mt-3">Daftar Barang</h3>
@@ -19,6 +19,7 @@
                         <th>Spesifikasi</th>
                         <th>Kategori</th>
                         <th>Stok</th>
+                        <th>Aksi</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -39,7 +40,7 @@
                             <td><?= $ktg['merk']; ?></td>
                             <td><?= $ktg['seri']; ?></td>
                             <td><?= $ktg['spesifikasi']; ?></td>
-                            <td><?= $ktg['kategori']; ?></td>
+                            <td><?= $ktg['kategori_id']; ?></td>
                             <td><?= $ktg['stok']; ?></td>
                             <td>
                                 <a href="<?= base_url(); ?>barang/detail/<?= $ktg['id']; ?>" class="btn btn-primary "><i

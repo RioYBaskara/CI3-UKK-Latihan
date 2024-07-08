@@ -4,53 +4,43 @@
         <div class="col-md-12">
             <div class="card">
                 <div class="card-header">
-                    Form Ubah Data Kategori
+                    Form Ubah Data Barang
                 </div>
                 <div class="card-body">
                     <form action="" method="POST">
-                        <input type="hidden" name="id" value="<?= $kategori['id']; ?>">
+                        <input type="hidden" name="id" value="<?= $barang['id']; ?>">
                         <div class="form-group">
-                            <label for="deskripsi">Deskripsi</label>
-                            <input type="text" name="deskripsi" class="form-control" id="deskripsi"
-                                value="<?= $kategori["deskripsi"]; ?>">
-                            <small class="form-text text-danger"><?= form_error('deskripsi'); ?></small>
+                            <label for="merk">Merk</label>
+                            <input type="text" name="merk" class="form-control" id="merk"
+                                value="<?= $barang["merk"]; ?>">
+                            <small class="form-text text-danger"><?= form_error('merk'); ?></small>
                         </div>
-
                         <div class="form-group">
-                            <label class="font-weight-bold">KATEGORI</label>
-
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="kategori" id="kategoriM" value="M"
-                                    <?= $kategori["kategori"] == 'M' ? 'checked' : '' ?>>
-                                <label class="form-check-label" for="kategoriM">
-                                    M - Modal
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="kategori" id="kategoriA" value="A"
-                                    <?= $kategori["kategori"] == 'A' ? 'checked' : '' ?>>
-                                <label class="form-check-label" for="kategoriA">
-                                    A - Aset
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="kategori" id="kategoriBHP"
-                                    value="BHP" <?= $kategori["kategori"] == 'BHP' ? 'checked' : '' ?>>
-                                <label class="form-check-label" for="kategoriBHP">
-                                    BHP - Barang Habis Pakai
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="kategori" id="kategoriBTHP"
-                                    value="BTHP" <?= $kategori["kategori"] == 'BTHP' ? 'checked' : '' ?>>
-                                <label class="form-check-label" for="kategoriBTHP">
-                                    BTHP - Barang Tidak Habis Pakai
-                                </label>
-                            </div>
-                            <small class="form-text text-danger"><?= form_error('kategori'); ?></small>
+                            <label for="seri">Seri</label>
+                            <input type="text" name="seri" class="form-control" id="seri"
+                                value="<?= $barang["seri"]; ?>">
+                            <small class="form-text text-danger"><?= form_error('seri'); ?></small>
+                        </div>
+                        <div class="form-group">
+                            <label for="spesifikasi">Spesifikasi</label>
+                            <input type="text" name="spesifikasi" class="form-control" id="spesifikasi"
+                                value="<?= $barang["spesifikasi"]; ?>">
+                            <small class="form-text text-danger"><?= form_error('spesifikasi'); ?></small>
+                        </div>
+                        <div class="form-group">
+                            <label for="kategori_id">ID Kategori</label>
+                            <input type="text" name="kategori_id" class="form-control" id="kategori_id"
+                                value="<?= $barang["kategori_id"]; ?>">
+                            <small class="form-text text-danger"><?= form_error('kategori_id'); ?></small>
+                        </div>
+                        <div class="form-group">
+                            <label for="stok">Stok</label>
+                            <input type="text" name="stok" class="form-control" id="stok"
+                                value="<?= $barang["stok"]; ?>">
+                            <small class="form-text text-danger"><?= form_error('stok'); ?></small>
                         </div>
                         <button name="tambah" type="submit"
-                            class="btn btn-md btn-primary tombol-ubah-yakin">SIMPAN</button>
+                            class="btn btn-md btn-primary tombol-tambah-yakin">SIMPAN</button>
                         <button type="reset" class="btn btn-md btn-warning">RESET</button>
                     </form>
                 </div>

@@ -3,46 +3,34 @@
         <div class="col-md-12">
             <div class="card">
                 <div class="card-header">
-                    Form Tambah Data Kategori
+                    Form Tambah Data Barang
                 </div>
                 <div class="card-body">
                     <form action="" method="POST">
                         <div class="form-group">
-                            <label for="deskripsi">Deskripsi</label>
-                            <input type="text" name="deskripsi" class="form-control" id="deskripsi">
-                            <small class="form-text text-danger"><?= form_error('deskripsi'); ?></small>
+                            <label for="merk">Merk</label>
+                            <input type="text" name="merk" class="form-control" id="merk">
+                            <small class="form-text text-danger"><?= form_error('merk'); ?></small>
                         </div>
-
-
                         <div class="form-group">
-                            <input type="hidden" id="base" value="<?php echo base_url(); ?>">
-                            <label class="font-weight-bold">KATEGORI</label>
-
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="kategori" id="kategori" value="M">
-                                <label class="form-check-label" for="kategori">
-                                    M - Modal
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="kategori" id="kategori" value="A">
-                                <label class="form-check-label" for="kategori">
-                                    A - Aset
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="kategori" id="kategori" value="BHP">
-                                <label class="form-check-label" for="kategori">
-                                    BHP - Barang Habis Pakai
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="kategori" id="kategori" value="BTHP">
-                                <label class="form-check-label" for="kategori">
-                                    BTHP - Barang Tidak Habis Pakai
-                                </label>
-                            </div>
-                            <small class="form-text text-danger"><?= form_error('kategori'); ?></small>
+                            <label for="seri">Seri</label>
+                            <input type="text" name="seri" class="form-control" id="seri">
+                            <small class="form-text text-danger"><?= form_error('seri'); ?></small>
+                        </div>
+                        <div class="form-group">
+                            <label for="spesifikasi">Spesifikasi</label>
+                            <input type="text" name="spesifikasi" class="form-control" id="spesifikasi">
+                            <small class="form-text text-danger"><?= form_error('spesifikasi'); ?></small>
+                        </div>
+                        <div class="form-group">
+                            <label for="kategori_id">ID Kategori</label>
+                            <input type="text" name="kategori_id" class="form-control" id="kategori_id">
+                            <small class="form-text text-danger"><?= form_error('kategori_id'); ?></small>
+                        </div>
+                        <div class="form-group">
+                            <label for="stok">Stok</label>
+                            <input type="text" name="stok" class="form-control" id="stok">
+                            <small class="form-text text-danger"><?= form_error('stok'); ?></small>
                         </div>
                         <button name="tambah" type="submit"
                             class="btn btn-md btn-primary tombol-tambah-yakin">SIMPAN</button>
