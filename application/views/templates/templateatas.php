@@ -176,4 +176,4 @@
 
                     <!-- disini content -->
 
-                    <div class="container">
+                    <div class="container-fluid">

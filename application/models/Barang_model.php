@@ -4,7 +4,10 @@ class Barang_model extends CI_Model
 {
     public function getAllBarang()
     {
-        return $this->db->get('Barang')->result_array();
+        $this->db->select('barang.*, kategori.deskripsi as kategori_deskripsi');
+        $this->db->from('barang');
+        $this->db->join('kategori', 'barang.kategori_id = kategori.id');
+        return $this->db->get()->result_array();
     }
 
     public function deleteBarang($id)

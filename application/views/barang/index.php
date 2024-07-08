@@ -33,21 +33,21 @@
                         </tr>
                     <?php endif; ?>
                     <?php $i = 1;
-                    foreach ($barang as $ktg): ?>
+                    foreach ($barang as $b): ?>
                         <tr>
                             <th><?= $i++; ?></th>
-                            <td><?= $ktg['id']; ?></td>
-                            <td><?= $ktg['merk']; ?></td>
-                            <td><?= $ktg['seri']; ?></td>
-                            <td><?= $ktg['spesifikasi']; ?></td>
-                            <td><?= $ktg['kategori_id']; ?></td>
-                            <td><?= $ktg['stok']; ?></td>
+                            <td><?= $b['id']; ?></td>
+                            <td><?= $b['merk']; ?></td>
+                            <td><?= $b['seri']; ?></td>
+                            <td><?= $b['spesifikasi']; ?></td>
+                            <td><?= $b['kategori_deskripsi']; ?></td>
+                            <td><?= $b['stok']; ?></td>
                             <td>
-                                <a href="<?= base_url(); ?>barang/detail/<?= $ktg['id']; ?>" class="btn btn-primary "><i
+                                <a href="<?= base_url(); ?>barang/detail/<?= $b['id']; ?>" class="btn btn-primary "><i
                                         class="fa fa-eye"></i></a>
-                                <a href="<?= base_url(); ?>barang/ubah/<?= $ktg['id']; ?>" class="btn btn-success  "><i
+                                <a href="<?= base_url(); ?>barang/ubah/<?= $b['id']; ?>" class="btn btn-success  "><i
                                         class="fa fa-pencil-alt"></i></a>
-                                <a href="<?= base_url(); ?>barang/hapus/<?= $ktg['id']; ?>"
+                                <a href="<?= base_url(); ?>barang/hapus/<?= $b['id']; ?>"
                                     class="btn btn-danger tombol-hapus"><i class="fa fa-trash"></i></a>
                             </td>
                         </tr>
