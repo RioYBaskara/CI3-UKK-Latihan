@@ -1,4 +1,4 @@
-<?php var_dump($barang); ?>
+<!-- <?php var_dump($barang); ?> -->
 <div class="container">
     <div class="flash-data-barang" data-flashdata="<?= $this->session->flashdata('flashbarang') ?>"></div>
     <h3 class="mt-3">Daftar Barang</h3>
