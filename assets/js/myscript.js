@@ -6,16 +6,17 @@
 // });
 const flashData = $(".flash-data").data("flashdata");
 
+console.log(flashData);
 // Swal.fire("Tes", "Tes " + flashData, "success");
 
-// if (flashData) {
-// 	Swal.fire({
-// 		title: "Data Mahasiswa ",
-// 		text: "Berhasil " + flashData,
-// 		type: "success",
-// 		icon: "success",
-// 	});
-// }
+if (flashData == "Ditambahkan") {
+	Swal.fire({
+		title: "Data " + flashData,
+		text: "Data telah Berhasil " + flashData,
+		type: "success",
+		icon: "success",
+	});
+}
 
 $(".tombol-hapus").on("click", function (e) {
 	e.preventDefault();

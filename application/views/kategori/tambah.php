@@ -43,7 +43,7 @@
                             </div>
                             <small class="form-text text-danger"><?= form_error('kategori'); ?></small>
                         </div>
-                        <button name="tambah" type="submit" class="btn btn-md btn-primary">SIMPAN</button>
+                        <button name="tambah" type="submit" class="btn btn-md btn-primary tombol-tambah">SIMPAN</button>
                         <button type="reset" class="btn btn-md btn-warning">RESET</button>
                     </form>
                 </div>
