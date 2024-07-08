@@ -3,7 +3,7 @@
     <div class="flash-data" data-flashdata="<?= $this->session->flashdata('flash') ?>"></div>
     <h3 class="mt-3">Daftar Kategori</h3>
     <div class="row mt-3">
-        <div class="col-md-6">
+        <div class="col-md-12">
             <a href="<?= base_url(); ?>kategori/tambah" class="btn btn-primary">Tambah Data Kategori</a>
         </div>
     </div>

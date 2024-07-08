@@ -41,7 +41,7 @@
                     <span>Data</span>
                 </a>
                 <div id="collapseData" class="collapse" aria-labelledby="headingData" data-parent="#accordionSidebar">
-                    <div class="bg-dark py-2 collapse-inner rounded">
+                    <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Data Options:</h6>
                         <a class="nav-item nav-link" href="<?= base_url(); ?>kategori">Kategori</a>
                         <a class="nav-item nav-link" href="<?= base_url(); ?>barang">Barang</a>
@@ -58,7 +58,7 @@
                 </a>
                 <div id="collapseTransaksi" class="collapse" aria-labelledby="headingTransaksi"
                     data-parent="#accordionSidebar">
-                    <div class="bg-dark py-2 collapse-inner rounded">
+                    <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Transaksi Options:</h6>
                         <a class="nav-item nav-link" href="<?= base_url(); ?>barangmasuk">BarangMasuk</a>
                         <a class="nav-item nav-link" href="<?= base_url(); ?>barangkeluar">BarangKeluar</a>
