@@ -39,7 +39,7 @@ class Kategori extends CI_Controller
         } else {
             $this->Kategori_model->insertKategori();
             // flashdata, session flash dengan isi Ditambahkan
-            $this->session->set_flashdata("flash", "Ditambahkan");
+            $this->session->set_flashdata("flashkategori", "Ditambahkan");
             // mengalihkan ke view mahasiswa
             redirect('kategori');
         }
@@ -48,7 +48,7 @@ class Kategori extends CI_Controller
     public function hapus($id)
     {
         $this->Kategori_model->deleteKategori($id);
-        $this->session->set_flashdata("flash", "Dihapus");
+        $this->session->set_flashdata("flashkategori", "Dihapus");
         redirect('kategori');
     }
 
@@ -81,7 +81,7 @@ class Kategori extends CI_Controller
         } else {
             $this->Kategori_model->ubahDataKategori();
             // flashdata, session flash dengan isi Ditambahkan
-            $this->session->set_flashdata("flash", "Diubah");
+            $this->session->set_flashdata("flashkategori", "Diubah");
             // mengalihkan ke view mahasiswa
             redirect('kategori');
         }

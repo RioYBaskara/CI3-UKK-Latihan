@@ -1,6 +1,6 @@
 <!-- <?php var_dump($kategori); ?> -->
 <div class="container">
-    <div class="flash-data-kategori" data-flashdata="<?= $this->session->flashdata('flash') ?>"></div>
+    <div class="flash-data-kategori" data-flashdata="<?= $this->session->flashdata('flashkategori') ?>"></div>
     <h3 class="mt-3">Daftar Kategori</h3>
     <div class="row mt-3">
         <div class="col-md-12">

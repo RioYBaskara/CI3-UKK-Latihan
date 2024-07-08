@@ -42,7 +42,7 @@ class Barang extends CI_Controller
         } else {
             $this->Barang_model->insertBarang();
             // flashdata, session flash dengan isi Ditambahkan
-            $this->session->set_flashdata("flash", "Ditambahkan");
+            $this->session->set_flashdata("flashbarang", "Ditambahkan");
             // mengalihkan ke view mahasiswa
             redirect('barang');
         }
@@ -51,7 +51,7 @@ class Barang extends CI_Controller
     public function hapus($id)
     {
         $this->Barang_model->deleteBarang($id);
-        $this->session->set_flashdata("flash", "Dihapus");
+        $this->session->set_flashdata("flashbarang", "Dihapus");
         redirect('barang');
     }
 
@@ -87,7 +87,7 @@ class Barang extends CI_Controller
         } else {
             $this->Barang_model->ubahDataBarang();
             // flashdata, session flash dengan isi Ditambahkan
-            $this->session->set_flashdata("flash", "Diubah");
+            $this->session->set_flashdata("flashbarang", "Diubah");
             // mengalihkan ke view mahasiswa
             redirect('barang');
         }

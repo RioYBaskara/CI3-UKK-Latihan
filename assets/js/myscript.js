@@ -6,35 +6,61 @@
 // });
 var baseUrl = "http://localhost/ci3ukk/";
 
-const flashDataKategori = $(".flash-data-kategori").data("flashDataKategori");
+const flashData = $(".flash-data-kategori").data("flashdata");
+const flashDataBarang = $(".flash-data-barang").data("flashdata");
 
-const flashDataBarang = $(".flash-data-barang").data("flashDataBarang");
+// console.log(flashData);
+// Swal.fire("Tes", "Tes " + flashData, "success");
 
-// console.log(flashDataKategori);
-// Swal.fire("Tes", "Tes " + flashDataKategori, "success");
-
-if (flashDataKategori == "Ditambahkan") {
+if (flashDataBarang == "Ditambahkan") {
 	Swal.fire({
-		title: "Data " + flashDataKategori,
-		text: "Data telah berhasil " + flashDataKategori,
+		title: "Data " + flashDataBarang,
+		text: "Data telah berhasil " + flashDataBarang,
 		type: "success",
 		icon: "success",
 	});
 }
 
-if (flashDataKategori == "Diubah") {
+if (flashDataBarang == "Diubah") {
 	Swal.fire({
-		title: "Data " + flashDataKategori,
-		text: "Data telah berhasil " + flashDataKategori,
+		title: "Data " + flashDataBarang,
+		text: "Data telah berhasil " + flashDataBarang,
 		type: "success",
 		icon: "success",
 	});
 }
 
-if (flashDataKategori == "Dihapus") {
+if (flashDataBarang == "Dihapus") {
 	Swal.fire({
-		title: "Data " + flashDataKategori,
-		text: "Data telah berhasil " + flashDataKategori,
+		title: "Data " + flashDataBarang,
+		text: "Data telah berhasil " + flashDataBarang,
+		type: "success",
+		icon: "success",
+	});
+}
+
+if (flashData == "Ditambahkan") {
+	Swal.fire({
+		title: "Data " + flashData,
+		text: "Data telah berhasil " + flashData,
+		type: "success",
+		icon: "success",
+	});
+}
+
+if (flashData == "Diubah") {
+	Swal.fire({
+		title: "Data " + flashData,
+		text: "Data telah berhasil " + flashData,
+		type: "success",
+		icon: "success",
+	});
+}
+
+if (flashData == "Dihapus") {
+	Swal.fire({
+		title: "Data " + flashData,
+		text: "Data telah berhasil " + flashData,
 		type: "success",
 		icon: "success",
 	});

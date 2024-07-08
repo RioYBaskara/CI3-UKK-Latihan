@@ -1,6 +1,6 @@
 <!-- <?php var_dump($barang); ?> -->
 <div class="container">
-    <div class="flash-data-barang" data-flashdata="<?= $this->session->flashdata('flash') ?>"></div>
+    <div class="flash-data-barang" data-flashdata="<?= $this->session->flashdata('flashbarang') ?>"></div>
     <h3 class="mt-3">Daftar Barang</h3>
     <div class="row mt-3">
         <div class="col-md-12">
