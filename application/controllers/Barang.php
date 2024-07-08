@@ -71,6 +71,7 @@ class Barang extends CI_Controller
     {
         $data['judul'] = 'Halaman Ubah Data Barang';
         $data['barang'] = $this->Barang_model->getBarangById($id);
+        $data["kategori"] = $this->Kategori_model->getAllKategori();
 
         $this->form_validation->set_rules("merk", "Merk", "required");
         $this->form_validation->set_rules("seri", "Seri", "required");
