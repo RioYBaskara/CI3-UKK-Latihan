@@ -6,33 +6,35 @@
 // });
 var baseUrl = "http://localhost/ci3ukk/";
 
-const flashData = $(".flash-data").data("flashdata");
+const flashDataKategori = $(".flash-data-kategori").data("flashDataKategori");
 
-// console.log(flashData);
-// Swal.fire("Tes", "Tes " + flashData, "success");
+const flashDataBarang = $(".flash-data-barang").data("flashDataBarang");
 
-if (flashData == "Ditambahkan") {
+// console.log(flashDataKategori);
+// Swal.fire("Tes", "Tes " + flashDataKategori, "success");
+
+if (flashDataKategori == "Ditambahkan") {
 	Swal.fire({
-		title: "Data " + flashData,
-		text: "Data telah berhasil " + flashData,
+		title: "Data " + flashDataKategori,
+		text: "Data telah berhasil " + flashDataKategori,
 		type: "success",
 		icon: "success",
 	});
 }
 
-if (flashData == "Diubah") {
+if (flashDataKategori == "Diubah") {
 	Swal.fire({
-		title: "Data " + flashData,
-		text: "Data telah berhasil " + flashData,
+		title: "Data " + flashDataKategori,
+		text: "Data telah berhasil " + flashDataKategori,
 		type: "success",
 		icon: "success",
 	});
 }
 
-if (flashData == "Dihapus") {
+if (flashDataKategori == "Dihapus") {
 	Swal.fire({
-		title: "Data " + flashData,
-		text: "Data telah berhasil " + flashData,
+		title: "Data " + flashDataKategori,
+		text: "Data telah berhasil " + flashDataKategori,
 		type: "success",
 		icon: "success",
 	});

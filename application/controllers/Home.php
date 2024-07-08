@@ -6,7 +6,7 @@ class Home extends CI_Controller
     {
         parent::__construct();
         $this->load->model("Kategori_model");
-        // $this->load->model("Barang_model");
+        $this->load->model("Barang_model");
         // $this->load->model("BarangMasuk_model");
         // $this->load->model("BarangKeluar_model");
     }
@@ -14,7 +14,7 @@ class Home extends CI_Controller
     {
         $data['judul'] = 'Halaman Home';
         $data['total_rows_kategori'] = $this->Kategori_model->count_all_kategori();
-        // $data['total_rows_barang'] = $this->Barang_model->count_all_barang();
+        $data['total_rows_barang'] = $this->Barang_model->count_all_barang();
         // $data['total_rows_barangmasuk'] = $this->BarangMasuk_model->count_all_barangmasuk();
         // $data['total_rows_barangkeluar'] = $this->BarangKeluar_model->count_all_barangkeluar();
 
