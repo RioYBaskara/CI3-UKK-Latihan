@@ -9,17 +9,20 @@
                     <form action="" method="POST">
                         <div class="form-group">
                             <label for="merk">Merk</label>
-                            <input type="text" name="merk" class="form-control" id="merk">
+                            <input type="text" name="merk" class="form-control" id="merk"
+                                value="<?= set_value('merk'); ?>">
                             <small class="form-text text-danger"><?= form_error('merk'); ?></small>
                         </div>
                         <div class="form-group">
                             <label for="seri">Seri</label>
-                            <input type="text" name="seri" class="form-control" id="seri">
+                            <input type="text" name="seri" class="form-control" id="seri"
+                                value="<?= set_value('seri'); ?>">
                             <small class="form-text text-danger"><?= form_error('seri'); ?></small>
                         </div>
                         <div class="form-group">
                             <label for="spesifikasi">Spesifikasi</label>
-                            <input type="text" name="spesifikasi" class="form-control" id="spesifikasi">
+                            <input type="text" name="spesifikasi" class="form-control" id="spesifikasi"
+                                value="<?= set_value('spesifikasi'); ?>">
                             <small class="form-text text-danger"><?= form_error('spesifikasi'); ?></small>
                         </div>
                         <div class="form-group">
@@ -27,7 +30,7 @@
                             <select name="kategori_id" class="form-control" id="kategori_id">
                                 <option value="">Pilih Kategori</option>
                                 <?php foreach ($kategori as $kat): ?>
-                                    <option value="<?= $kat['id']; ?>">
+                                    <option value="<?= $kat['id']; ?>" <?= set_select('kategori_id', $kat['id']); ?>>
                                         <?= $kat['id']; ?> - <?= $kat['deskripsi']; ?>
                                     </option>
                                 <?php endforeach; ?>
@@ -36,7 +39,8 @@
                         </div>
                         <div class="form-group">
                             <label for="stok">Stok</label>
-                            <input type="text" name="stok" class="form-control" id="stok">
+                            <input type="text" name="stok" class="form-control" id="stok"
+                                value="<?= set_value('stok'); ?>">
                             <small class="form-text text-danger"><?= form_error('stok'); ?></small>
                         </div>
                         <button name="tambah" type="submit"
