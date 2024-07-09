@@ -31,7 +31,7 @@ class Barang extends CI_Controller
         $this->form_validation->set_rules("merk", "Merk", "required");
         $this->form_validation->set_rules("seri", "Seri", "required");
         $this->form_validation->set_rules("spesifikasi", "Spesifikasi", "required");
-        $this->form_validation->set_rules("kategori_id", "ID Kategori", "required");
+        $this->form_validation->set_rules("kategori_id", "Kategori", "required");
         $this->form_validation->set_rules("stok", "Stok", "required|numeric");
 
         if ($this->form_validation->run() == FALSE) {
@@ -77,7 +77,7 @@ class Barang extends CI_Controller
         $this->form_validation->set_rules("seri", "Seri", "required");
         $this->form_validation->set_rules("spesifikasi", "Spesifikasi", "required");
         $this->form_validation->set_rules("stok", "Stok", "required|numeric");
-        $this->form_validation->set_rules("kategori_id", "ID Kategori", "required");
+        $this->form_validation->set_rules("kategori_id", "Kategori", "required");
 
         if ($this->form_validation->run() == FALSE) {
             $this->load->view("templates/header.php", $data);
